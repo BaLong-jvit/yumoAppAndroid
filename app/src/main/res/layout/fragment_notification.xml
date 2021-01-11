@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#DDECD9"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/lichsumuahang"
+        android:text="Thông báo"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="17dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:textStyle="bold"
+        android:layout_marginVertical="5dp"
+        android:background="#B2C4C4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <ListView
+        android:id="@+id/list_history"
+        android:layout_margin="5dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/lichsumuahang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+</RelativeLayout>

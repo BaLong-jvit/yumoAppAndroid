@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/img_sanphamdamua"
+        android:layout_margin="5dp"
+        android:layout_width="100dp"
+        android:layout_gravity="center"
+        android:background="@drawable/backgroud_dangky"
+        android:layout_height="100dp"/>
+    <RelativeLayout
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txt_tensanphamdamua"
+            android:text="Sandal không thấm nước Sandal đế bánh "
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="Giá sản phẩm: "
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txt_tensanphamdamua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/txt_giaSanphamdamua"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txt_tensanphamdamua"
+            android:text="240.000đ"
+            android:layout_marginLeft="95dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="Số lượng: "
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txt_giaSanphamdamua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/txt_soluong"
+            android:text="3"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txt_giaSanphamdamua"
+            android:layout_marginLeft="65dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="Trạng thái: "
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txt_soluong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/txt_trangthai_thanhtoan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_soluong"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="18dp"
+            android:text="Chờ xác nhận" />
+
+        <Button
+            android:id="@+id/btn_datlai"
+            android:layout_width="70dp"
+            android:layout_height="34dp"
+            android:focusable="false"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/backgroud_dangky"
+            android:text="Đặt lại"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+        <Button
+            android:id="@+id/btn_chitiet"
+            android:layout_width="70dp"
+            android:focusable="false"
+            android:layout_height="34dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="60dp"
+            android:layout_toLeftOf="@+id/btn_datlai"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/backgroud_dangky"
+            android:text="Chi tiết"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+    </RelativeLayout>
+</LinearLayout>

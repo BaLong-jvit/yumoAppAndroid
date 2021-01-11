@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#DDECD9"
+    android:layout_marginHorizontal="3dp"
+    android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="#828282"
+        android:weightSum="10"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tb_timkiem"
+            android:layout_margin="5dp"
+            android:layout_weight="8"
+            android:layout_width="0dp"
+            android:layout_height="40dp">
+
+        </androidx.appcompat.widget.Toolbar>
+        <RelativeLayout
+            android:id="@+id/giohangtimkiem"
+            android:gravity="center"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageButton
+                android:id="@+id/imgBtnGiohangtimkiem"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/icon_cart" />
+
+            <TextView
+                android:id="@+id/txt_hang_trong_giotimkiem"
+                android:background="@drawable/number_count_bill"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:text="0"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="-7dp"
+                android:layout_marginTop="-3dp"
+                android:layout_toEndOf="@+id/imgBtnGiohangtimkiem" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Kết quả của: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tukhoatimkiem"
+            android:text="\'\'Giày dép nam\'\'"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcl_sanphamtimkiem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true" />
+
+        <TextView
+            android:id="@+id/text_thongbaokhongcosanphamphuhop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="80dp"
+            android:gravity="center"
+            android:text="Không có sản phẩm phù hợp" />
+    </RelativeLayout>
+
+</LinearLayout>

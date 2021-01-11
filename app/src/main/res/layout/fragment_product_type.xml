@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:background="#DDECD9"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:id="@+id/header_yomi"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="7dp"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal"
+        android:background="#828282"
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_category"
+            android:layout_weight="1.5"
+            android:layout_width="0dp"
+            android:layout_height="40dp">
+
+        </androidx.appcompat.widget.Toolbar>
+        <EditText
+            android:id="@+id/edtxt_search_yomi"
+            android:layout_width="0dp"
+            android:layout_weight="7"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:paddingStart="10dp"
+            android:hint="Tìm kiếm sản phẩm ..."
+            android:layout_marginTop="0dp"
+            android:background="#fff" />
+        <ImageButton
+            android:id="@+id/imgBtn_searchYomi"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/iconsearch"
+            android:background="#fff"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+        <RelativeLayout
+            android:id="@+id/giohang_category"
+            android:gravity="center"
+            android:layout_weight="1.5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageButton
+                android:id="@+id/imgBtnGiohang_category"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/icon_cart" />
+
+            <TextView
+                android:id="@+id/txt_hang_trong_gio_category"
+                android:background="@drawable/number_count_bill"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:text="0"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="-7dp"
+                android:layout_marginTop="-3dp"
+                android:layout_toEndOf="@+id/imgBtnGiohang_category" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lnl_menu"
+        android:layout_below="@+id/header_yomi"
+        android:layout_alignParentStart="true"
+        android:background="#DDECD9"
+        android:layout_marginVertical="5dp"
+        android:layout_marginStart="0dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="10dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ViewFlipper
+                android:id="@+id/vFl_YomiMall"
+                android:background="#FFFF"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+            </ViewFlipper>
+
+            <TextView
+                android:id="@+id/txt_tendanhmuc"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="#3B000000"
+                android:gravity="center"
+                android:text="Tên danh mục"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rV_yomi_catgory"
+                    android:layout_width="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:background="#00FFFFFF"
+                    android:layout_height="700dp"
+                    android:layout_marginHorizontal="3dp"
+                    android:layout_marginTop="5dp"/>
+                <ProgressBar
+                    android:id="@+id/progressBar_loadMore_product_typle"
+                    android:layout_width="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_height="40dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

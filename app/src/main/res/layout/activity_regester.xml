@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#DDECD9"
+    android:focusableInTouchMode="true"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolb_dangky"
+        android:background="#828282"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:focusableInTouchMode="true"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/tV_dangKy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="40dp"
+            android:gravity="center_horizontal"
+            android:text="Đăng ký"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/tp1"
+            android:layout_below="@+id/tV_dangKy"
+            android:layout_alignParentStart="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txt_userProblem"
+                android:layout_width="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="40dp"
+                android:layout_height="20dp"
+                android:textSize="14dp"/>
+
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tV_userRegester"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="9dp"
+                    android:gravity="center"
+                    android:text="Tên đăng nhập: "
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/etxt_userNameRegester"
+                    android:layout_toLeftOf="@id/img_check_user"
+                    android:layout_width="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="120dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_height="30dp"
+                    android:textSize="15sp"
+                    android:background="#fff"
+                    android:hint="User Name..."
+                    android:paddingHorizontal="5dp" />
+                <ImageView
+                    android:id="@+id/img_check_user"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="30dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_height="30dp"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/tp2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/tp1"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tV_tenHienThi"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="9dp"
+                android:gravity="center"
+                android:text="Tên hiển thị: "
+                android:textSize="15sp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/etxt_tenHienThi"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#fff"
+                android:textSize="15sp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="120dp"
+                android:hint="Display Name..."
+                android:paddingHorizontal="5dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tp3"
+            android:layout_below="@+id/tp2"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentStart="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tV_passWord"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="6dp"
+                android:gravity="center"
+                android:layout_alignParentTop="true"
+                android:text="Mật khẩu: "
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etxt_passWord"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="120dp"
+                android:layout_toLeftOf="@id/img_check_pass"
+                android:background="#fff"
+                android:textSize="15sp"
+                android:ems="20"
+                android:hint="Password..."
+                android:inputType="textPassword"
+                android:paddingHorizontal="5dp" />
+
+            <ImageView
+                android:id="@+id/img_check_pass"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginHorizontal="5dp" />
+            <TextView
+                android:id="@+id/tV_greatPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etxt_passWord"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="40dp"
+                android:layout_marginStart="149dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:textSize="14dp"
+                android:textStyle="normal" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tp4"
+            android:layout_below="@+id/tp3"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tV_confirmPassWord"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="10dp"
+                android:text="Mật khẩu: "
+                android:gravity="center"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/img_check_pass2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginHorizontal="5dp" />
+
+            <EditText
+                android:id="@+id/etxt_confirmPassWord"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/img_check_pass2"
+                android:layout_marginStart="120dp"
+                android:layout_alignParentStart="true"
+                android:background="#fff"
+                android:ems="20"
+                android:textSize="15sp"
+                android:hint="Password..."
+                android:inputType="textPassword"
+                android:paddingHorizontal="5dp" />
+
+
+            <TextView
+                android:id="@+id/tV_confpassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etxt_confirmPassWord"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginRight="5dp"
+                android:textSize="15dp"
+                android:textStyle="normal" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tp5"
+            android:layout_below="@+id/tp4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/img_check_mail"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginHorizontal="5dp" />
+
+            <EditText
+                android:id="@+id/etxt_e_mail"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_toLeftOf="@+id/img_check_mail"
+                android:layout_marginStart="120dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:background="#fff"
+                android:textSize="15sp"
+                android:hint="E-mail..."
+                android:inputType="textEmailAddress"
+                android:paddingHorizontal="5dp" />
+
+            <TextView
+                android:id="@+id/tV_mail"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="10dp"
+                android:gravity="center"
+                android:text="Địa chỉ E-mail: "
+                android:textSize="15dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tp6"
+            android:layout_below="@+id/tp5"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tV_phoneNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="10dp"
+                android:gravity="center"
+                android:text="Số điện thoại: "
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etxt_phoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="120dp"
+                android:layout_toLeftOf="@+id/img_check_phone"
+                android:layout_alignParentStart="true"
+                android:background="#fff"
+                android:hint="Phone Number..."
+                android:textSize="15sp"
+                android:inputType="phone"
+                android:paddingHorizontal="5dp" />
+            <TextView
+                android:id="@+id/tV_checkPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etxt_phoneNumber"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="40dp"
+                android:textSize="15dp"
+                android:textStyle="normal" />
+            <ImageView
+                android:id="@+id/img_check_phone"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginHorizontal="5dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tp7"
+            android:layout_below="@+id/tp6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <CheckBox
+                android:id="@+id/chBox_dieuKhoan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="120dp"/>
+
+            <Button
+                android:id="@+id/btn_regester_regester"
+                android:layout_width="115dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/btn_login_regester"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/backgroud_dangky"
+                android:text="Đăng ký"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btn_login_regester"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="120dp"
+                android:background="@drawable/backgroud_dangnhap"
+                android:text="Đăng nhập"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/chBox_dieuKhoan"
+                android:background="#00000000"
+                android:text="Tôi đồng ý với điều khoản"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="17dp"
+                android:textStyle="normal" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

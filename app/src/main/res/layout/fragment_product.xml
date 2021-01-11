@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#DDECD9"
+    android:layout_height="match_parent"
+    tools:context=".fragment.Fragment_Product"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb_product"
+        android:layout_width="match_parent"
+        android:background="#828282"
+        android:layout_height="30dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="10dp"
+            android:layout_above="@+id/lnl_menu">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="255dp"
+                    android:orientation="vertical">
+                    <androidx.drawerlayout.widget.DrawerLayout
+                        android:id="@+id/appbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <com.google.android.material.tabs.TabLayout
+                            android:id="@+id/tabs"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                        <androidx.viewpager.widget.ViewPager
+                            android:id="@+id/container"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+                    </androidx.drawerlayout.widget.DrawerLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_thongtinsanpham"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rcv_danhsachhinhanh">
+
+                    <TextView
+                        android:id="@+id/txt_productName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="5dp"
+                        android:padding="5dp"
+                        android:paddingStart="10dp"
+                        android:text="Giày quai da chữ x"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_productName"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="16dp"
+                        android:text="Thương hiệu: " />
+
+                    <TextView
+                        android:id="@+id/txt_thuonghieu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_productName"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="92dp"
+                        android:layout_marginTop="16dp"
+                        android:text="bitishunter" />
+
+                    <RelativeLayout
+                        android:id="@+id/thongtin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_productName"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginTop="43dp">
+
+                        <RelativeLayout
+                            android:id="@+id/gia"
+                            android:layout_width="177dp"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/productPrice"
+                                style="@android:style/Widget.TextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginLeft="5dp"
+                                android:paddingLeft="3dp"
+                                android:textAlignment="center"
+                                android:textColor="#FA3326"
+                                android:textSize="20sp"
+                                android:textStyle="italic" />
+                            <RelativeLayout
+                                android:layout_width="100dp"
+                                android:layout_height="19dp"
+                                android:layout_below="@+id/productPrice"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginStart="0dp"
+                                android:layout_marginLeft="0dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/old_productPrice"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="14dp"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginEnd="0dp"
+                                    android:textSize="12sp"
+                                    android:textStyle="italic" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="14dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:layout_toStartOf="@+id/old_productPrice"
+                                    android:text="Giá cũ: "
+                                    android:textSize="12dp"
+                                    android:textStyle="italic" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="100dp"
+                            android:layout_height="23dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginLeft="0dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/DaBan"
+                                android:layout_width="wrap_content"
+                                android:layout_height="14dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginEnd="10dp"
+                                android:textSize="12sp"
+                                android:textStyle="italic" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/thongtin"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="15dp"
+                        android:background="#F0EDED"
+                        android:paddingStart="10dp"
+                        android:text="Mô tả sản phẩm"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_mota"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/thongtin"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginTop="40dp"
+                        android:paddingHorizontal="5dp" />
+                    <Button
+                        android:layout_below="@id/txt_mota"
+                        android:layout_alignParentStart="true"
+                        android:id="@+id/btn_xemthem"
+                        android:gravity="center"
+                        android:drawableRight="@drawable/down_arrow"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:paddingHorizontal="60dp"
+                        android:textSize="14sp"
+                        android:background="#00ffffff"
+                        android:text="Xem chi tiết"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"/>
+                    <Button
+                        android:layout_below="@id/txt_mota"
+                        android:layout_alignParentStart="true"
+                        android:id="@+id/btn_thugon"
+                        android:gravity="center"
+                        android:drawableRight="@drawable/up_chevron"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:paddingHorizontal="60dp"
+                        android:textSize="14sp"
+                        android:background="#00ffffff"
+                        android:text="Thu gọn"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="#3B000000"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="Sản phẩm tương tự"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rcv_sanphamtuongtu"
+                        android:layout_width="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:background="#00FFFFFF"
+                        android:layout_height="700dp"
+                        android:layout_marginHorizontal="3dp"
+                        android:layout_marginTop="5dp">
+                    </androidx.recyclerview.widget.RecyclerView>
+                    <ProgressBar
+                        android:id="@+id/progressBar_loadMore_product"
+                        android:layout_width="match_parent"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_height="40dp"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/lnl_menu"
+            android:layout_width="312dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:gravity="center|left"
+            android:layout_margin="4dp"
+            android:orientation="horizontal"
+            android:weightSum="4">
+            <RelativeLayout
+                android:id="@+id/giohang_Product"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/imgBtnGiohang_Product"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/icon_cart" />
+
+                <TextView
+                    android:id="@+id/txt_hang_trong_gio_Product"
+                    android:background="@drawable/number_count_bill"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:text="0"
+                    android:gravity="center"
+                    android:textColor="#fff"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="-7dp"
+                    android:layout_marginTop="-3dp"
+                    android:layout_toEndOf="@+id/imgBtnGiohang_Product" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_addToCart"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@drawable/border_ra3_we5"
+                android:drawableLeft="@drawable/icon_cart"
+                android:paddingHorizontal="10dp"
+                android:text="Thêm Vào Giỏ"
+                android:textAlignment="textEnd"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_Buy"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/border_ra5_bgreg"
+                android:text="Mua Ngay"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <gradient
+        android:startColor="#69A74e"
+        android:endColor="#69A74e" />
+    //tao radius
+    <corners android:radius="3dp" />
+    //tao duong border rong 5px va mau den
+    <stroke
+        android:width="5px"
+        android:color="#69A74e" />
+</shape>

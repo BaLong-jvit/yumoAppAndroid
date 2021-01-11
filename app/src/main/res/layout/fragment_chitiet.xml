@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#DDECD9"
+    android:layout_height="match_parent"
+    tools:context=".fragment.Fragment_chiTiet">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb_chitietsp"
+        android:layout_width="match_parent"
+        android:background="#828282"
+        android:layout_height="30dp"/>
+    <LinearLayout
+        android:id="@+id/linearLayout_chitiet"
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:id="@+id/top_chitiet"
+                    android:layout_width="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_height="255dp"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/hinh_chitiet"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </LinearLayout>
+                <ScrollView
+                    android:layout_below="@+id/top_chitiet"
+                    android:layout_above="@+id/btn_datlai_chitiet"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/txt_productName_chitiet"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Giày quai da chữ x"
+                                android:paddingStart="10dp"
+                                android:textSize="25sp"
+                                android:textStyle="bold"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginTop="5dp"
+                                android:padding="5dp" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/txt_productName_chitiet"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginStart="4dp"
+                                android:layout_marginTop="10dp"
+                                android:text="Thương hiệu: " />
+
+                            <TextView
+                                android:id="@+id/txt_thuonghieu_chitiet"
+                                android:layout_width="148dp"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/txt_productName_chitiet"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginStart="65dp"
+                                android:layout_marginTop="28dp"
+                                android:layout_marginBottom="5dp"
+                                android:text="bitishunter" />
+
+                            <RelativeLayout
+                                android:id="@+id/gia_chitiet"
+                                android:layout_below="@+id/txt_productName_chitiet"
+                                android:layout_alignParentEnd="true"
+                                android:layout_width="177dp"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:id="@+id/productPrice_chitiet"
+                                    style="@android:style/Widget.TextView"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_marginLeft="5dp"
+                                    android:paddingLeft="3dp"
+                                    android:textAlignment="center"
+                                    android:textColor="#FA3326"
+                                    android:textSize="20sp"
+                                    android:textStyle="italic" />
+<!--                                <TextView-->
+<!--                                    android:layout_width="15dp"-->
+<!--                                    android:layout_height="15dp"-->
+<!--                                    android:layout_alignParentTop="true"-->
+<!--                                    android:layout_marginStart="0dp"-->
+<!--                                    android:layout_marginTop="0dp"-->
+<!--                                    android:layout_toEndOf="@+id/productPrice_chitiet"-->
+<!--                                    android:gravity="center"-->
+<!--                                    android:text="đ"-->
+<!--                                    android:textColor="#FA3326"-->
+<!--                                    android:textSize="10dp"-->
+<!--                                    android:textStyle="bold" />-->
+                                <RelativeLayout
+                                    android:layout_width="100dp"
+                                    android:layout_height="19dp"
+                                    android:layout_below="@+id/productPrice_chitiet"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginLeft="0dp"
+                                    android:orientation="horizontal">
+                                    <TextView
+                                        android:id="@+id/old_productPrice_chitiet"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="14dp"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_marginEnd="0dp"
+                                        android:textSize="12sp"
+                                        android:textStyle="italic" />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="14dp"
+                                        android:layout_marginEnd="0dp"
+                                        android:layout_toStartOf="@+id/old_productPrice_chitiet"
+                                        android:text="Số lượng: "
+                                        android:textSize="12dp"
+                                        android:textStyle="italic" />
+                                </RelativeLayout>
+                            </RelativeLayout>
+                        </RelativeLayout>
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="0dp"
+                                android:layout_marginTop="15dp"
+                                android:background="#F0EDED"
+                                android:paddingStart="10dp"
+                                android:text="Mô tả sản phẩm"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:id="@+id/txt_mota_chitiet"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="2dp"
+                                android:layout_marginTop="10dp"
+                                android:paddingHorizontal="5dp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ListView
+                                android:id="@+id/list_trangthai_chitiet"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </ScrollView>
+                <Button
+                    android:id="@+id/btn_datlai_chitiet"
+                    android:text="Đặt lại"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

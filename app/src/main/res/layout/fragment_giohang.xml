@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DDECD9"
+    tools:context=".fragment.Fragment_GioHang">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb_giohang"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:background="#828282"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+    </androidx.appcompat.widget.Toolbar>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/giaodienthanhtoan"
+        android:layout_below="@+id/tb_giohang"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/msgBox_giohangtrong"
+            android:layout_width="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:textSize="22sp" />
+        <ListView
+            android:id="@+id/list_sanphamgiohang"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/giaodienthanhtoan"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:weightSum="3"
+        android:orientation="vertical">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:text="Mã Giảm Giá: "
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:layout_marginStart="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+            <Button
+                android:id="@+id/btn_magiamgia"
+                android:layout_marginHorizontal="10dp"
+                android:text="Chọn Mã Giảm Giá"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+        <!--        <LinearLayout-->
+        <!--            android:orientation="horizontal"-->
+        <!--            android:layout_weight="1"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="0dp">-->
+        <!--            <TextView-->
+        <!--                android:text="Hình Thức Thanh Toán: "-->
+        <!--                android:textSize="15sp"-->
+        <!--                android:textStyle="bold"-->
+        <!--                android:gravity="center_vertical"-->
+        <!--                android:layout_marginStart="15dp"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="match_parent"/>-->
+        <!--            <Button-->
+        <!--                android:id="@+id/btn_hinhthucthanhtoan"-->
+        <!--                android:layout_marginHorizontal="10dp"-->
+        <!--                android:text="Chọn"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="match_parent"/>-->
+        <!--        </LinearLayout>-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <RelativeLayout
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_width="0dp">
+                <TextView
+                    android:id="@+id/txt_total_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="0dp"
+                    android:textColor="#FA3326"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Thanh toán: " />
+
+            </RelativeLayout>
+            <Button
+                android:id="@+id/btn_dathang"
+                android:text="Mua hàng"
+                android:background="@drawable/border_ra5_bgreg"
+                android:layout_margin="5dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="17dp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <Button
+                android:id="@+id/btn_tieptucmuahang"
+                android:text="Tiếp tục mua hàng"
+                android:background="@drawable/border_ra5_bgreg"
+                android:layout_margin="5dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="17dp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

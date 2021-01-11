@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#DDECD9"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    tools:context=".fragment.Fragment_Chondiachi">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#828282"
+        android:id="@+id/toolb_chondiachi"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@+id/btn_chondiachi"
+    android:layout_alignParentTop="true"
+    android:layout_marginHorizontal="20dp"
+    android:layout_marginVertical="40dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Nhập thông tin nhận hàng"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#0AFAF7F7"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Họ Tên" />
+
+            <EditText
+                android:id="@+id/edt_hovaten"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="2dp"
+                android:background="#fff"
+                android:hint="Nhập họ tên..."
+                android:paddingHorizontal="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Số điện thoại" />
+
+            <EditText
+                android:id="@+id/edt_sdtngNhan"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#fff"
+                android:hint="Nhập số điện thoại..."
+                android:inputType="number"
+                android:paddingHorizontal="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Email: " />
+
+            <EditText
+                android:id="@+id/edt_email"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="2dp"
+                android:background="#fff"
+                android:hint="Nhập Email..."
+                android:paddingHorizontal="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Tỉnh/Thành phố" />
+
+            <Spinner
+                android:id="@+id/spinner_tinhthanhpho"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginTop="2dp"
+                android:background="@android:drawable/edit_text"
+                android:paddingHorizontal="10dp"
+                android:spinnerMode="dialog" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Quận/Huyện" />
+
+            <Spinner
+                android:id="@+id/spinner_quanhuyen"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:background="@android:drawable/edit_text"
+                android:paddingHorizontal="10dp"
+                android:spinnerMode="dialog" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Phường/Xã" />
+
+            <Spinner
+                android:id="@+id/spinner_phuongxa"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:background="@android:drawable/edit_text"
+                android:paddingHorizontal="10dp"
+                android:spinnerMode="dialog" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Địa chỉ cụ thể" />
+
+            <EditText
+                android:id="@+id/edt_diachicuthe"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#fff"
+                android:hint="Số nhà, tên tòa nhà, tên đường..."
+                android:paddingHorizontal="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Hình thức thanh toán" />
+
+            <Spinner
+                android:id="@+id/spinner_hinhthucthanhtoan"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:background="@android:drawable/edit_text"
+                android:paddingHorizontal="10dp"
+                android:spinnerMode="dialog" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+
+        <Button
+            android:id="@+id/btn_chondiachi"
+            android:text="Xác nhận"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="23dp"
+            android:background="@drawable/border_ra5_bgreg"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_width="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</LinearLayout>
